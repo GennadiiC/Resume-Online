@@ -1,0 +1,40 @@
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: 
+    linear-gradient(
+      to top, 
+      rgba($primary-color, 1),
+      rgba(transparent, 0.3),
+      rgba($secondary-color, 0.8)
+    ),
+  url('/IMG/Setubal.jpg');
+  background-size: 100% 100%;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform: 
+      rotate(90deg) 
+      translate(-3rem, -5rem);
+  }
+}
